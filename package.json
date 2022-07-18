@@ -1,0 +1,32 @@
+{
+  "name": "violence_against_women_india",
+  "source": [
+    "src/index.ejs"
+  ],
+  "targets": {
+    "default": {
+      "distDir": "./docs",
+      "publicUrl": "./",
+      "sourceMap": false
+    }
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel serve --open",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.3.2",
+    "eslint": "^8.11.0",
+    "eslint-config-google": "^0.14.0",
+    "parcel": "^2.3.2",
+    "parcel-transformer-ejs": "^0.2.0",
+    "stylelint-config-standard": "^25.0.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.4",
+    "bootstrap": "^5.1.3",
+    "enter-view": "^2.0.1",
+    "lodash.debounce": "^4.0.8"
+  }
+}

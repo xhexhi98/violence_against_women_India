@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link the main css file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- link the main js file -->
+    <script type="module" src="js/app.js" defer></script>
+</head>
+<body>
+        <!-- ai2html -->
+        <section class="ai2html">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                <!-- This is the line that matters for import -->
+                <%- include('./ai2html-output/ai2html-test.ejs'); %>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- ai2html -->
+        <section class="ai2html">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                <!-- This is the line that matters for import -->
+                <%- include('./ai2html-output/vio.ejs'); %>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- scrolly -->
+        <section id="doge-scrolly">
+
+        <!-- define the scroll sections -->
+        <% const blocks=
+            [
+            { 
+                "filename" : "doge_1" , 
+                "anno" : "_blank-slide_" 
+            }, 
+            { 
+                "filename" : "doge_2" , 
+                "anno": "The Dogefather"
+            },
+                    { 
+                "filename" : "doge_3" , 
+                "anno": "<div class='h5 fw-bold'> Doge Title </div> Much Doge Such Wow" 
+                }
+            ] 
+        %>
+        <!-- every { filename, anno } object makes a new section -->
+
+        <!-- include the component -->
+        <%- include('./scrolly/scrolly.ejs', {id: "doge-scrolly" , blocks: blocks }); %>
+        
+        </section>
+</body>
+</html>
