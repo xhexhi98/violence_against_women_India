@@ -17,18 +17,6 @@
             <div class="row">
                 <div class="col-12">
                 <!-- This is the line that matters for import -->
-                <%- include('./ai2html-output/ai2html-test.ejs'); %>
-                </div>
-            </div>
-            </div>
-        </section>
-
-        <!-- ai2html -->
-        <section class="ai2html">
-            <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                <!-- This is the line that matters for import -->
                 <%- include('./ai2html-output/vio.ejs'); %>
                 </div>
             </div>
@@ -52,7 +40,11 @@
                     { 
                 "filename" : "doge_3" , 
                 "anno": "<div class='h5 fw-bold'> Doge Title </div> Much Doge Such Wow" 
-                }
+                },
+                { 
+            "filename" : "l1" , 
+            "anno": " too much of Doge so now a circle." 
+            }
             ] 
         %>
         <!-- every { filename, anno } object makes a new section -->
