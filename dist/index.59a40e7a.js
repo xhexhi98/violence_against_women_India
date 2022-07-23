@@ -541,6 +541,9 @@ var _enterViewScrollyDefault = parcelHelpers.interopDefault(_enterViewScrolly);
  * Call the scrolly function with the ID of the section in HTML
  * Can have more than one scrolly on a page
  */ (0, _enterViewScrollyDefault.default)("#doge-scrolly");
+(0, _enterViewScrollyDefault.default)("#scrolly-one");
+(0, _enterViewScrollyDefault.default)("#scrolly-two");
+(0, _enterViewScrollyDefault.default)("#scrolly-main");
 
 },{"bootstrap":"h36JB","../scrolly/enterViewScrolly":"a8jxY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"h36JB":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

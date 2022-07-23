@@ -11,47 +11,177 @@
     <script type="module" src="js/app.js" defer></script>
 </head>
 <body>
-        <!-- ai2html -->
+        <!-- main scrolly -->
+        <section id="scrolly-main" class="pb-5" style="background-color: #2C181D;">
+
+            <!-- define the scroll sections -->
+            <% const scrolly0=
+                [
+                { 
+                    "filename" : "m1" , 
+                    "anno" : "_blank-slide_" 
+                }
+                ] 
+            %>
+            <!-- every { filename, anno } object makes a new section -->
+    
+            <!-- include the component -->
+            <%- include('./scrolly/scrolly.ejs', {id: "scrolly-main" , blocks: scrolly0 }); %>
+            
+            </section>
+
+
+        <!-- 1st scrolly -->
+        <section id="scrolly-one" style="color: #2C181D;">
+
+            <!-- define the scroll sections -->
+            <% const scrolly1=
+                [
+                { 
+                    "filename" : "Image1" , 
+                    "anno" : "_blank-slide_" 
+                }, 
+                { 
+                    "filename" : "Image2" , 
+                    "anno": "_blank-slide_"
+                }, 
+                { 
+                    "filename" : "Image3" , 
+                    "anno": "_blank-slide_"
+                }, 
+                { 
+                    "filename" : "Image4" , 
+                    "anno": "_blank-slide_"
+                }, 
+                { 
+                    "filename" : "Image5" , 
+                    "anno": "_blank-slide_"
+                }, 
+                { 
+                    "filename" : "Image6" , 
+                    "anno": "_blank-slide_"
+                }
+                ] 
+            %>
+            <!-- every { filename, anno } object makes a new section -->
+    
+            <!-- include the component -->
+            <%- include('./scrolly/scrolly.ejs', {id: "scrolly-one" , blocks: scrolly1 }); %>
+            
+            </section>
+
+            <!--  2nd static -->
         <section class="ai2html">
             <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
                 <!-- This is the line that matters for import -->
-                <%- include('./ai2html-output/vio.ejs'); %>
+                <%- include('./ai2html-output/static-2.ejs'); %>
                 </div>
             </div>
             </div>
         </section>
 
-        <!-- scrolly -->
-        <section id="doge-scrolly">
-
-        <!-- define the scroll sections -->
-        <% const blocks=
-            [
-            { 
-                "filename" : "doge_1" , 
-                "anno" : "_blank-slide_" 
-            }, 
-            { 
-                "filename" : "doge_2" , 
-                "anno": "The Dogefather"
-            },
-                    { 
-                "filename" : "doge_3" , 
-                "anno": "<div class='h5 fw-bold'> Doge Title </div> Much Doge Such Wow" 
-                },
-                { 
-            "filename" : "l1" , 
-            "anno": " too much of Doge so now a circle." 
-            }
-            ] 
-        %>
-        <!-- every { filename, anno } object makes a new section -->
-
-        <!-- include the component -->
-        <%- include('./scrolly/scrolly.ejs', {id: "doge-scrolly" , blocks: blocks }); %>
-        
+        <!--  middle static -->
+        <section class="ai2html">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                <!-- This is the line that matters for import -->
+                <%- include('./ai2html-output/normalizing.ejs'); %>
+                </div>
+            </div>
+            </div>
         </section>
+
+        <!--  3rd static -->
+        <section class="ai2html">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                <!-- This is the line that matters for import -->
+                <%- include('./ai2html-output/static-3.ejs'); %>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!--  4th static -->
+        <section class="ai2html">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                <!-- This is the line that matters for import -->
+                <%- include('./ai2html-output/static-4.ejs'); %>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- 2nd scrolly -->
+        <section id="scrolly-two">
+
+            <!-- define the scroll sections -->
+            <% const scrolly2=
+                [
+                { 
+                    "filename" : "layer1" , 
+                    "anno" : "_blank-slide_" 
+                }, 
+                { 
+                    "filename" : "layer2" , 
+                    "anno": "_blank-slide_"
+                }, 
+                { 
+                    "filename" : "layer3" , 
+                    "anno": "_blank-slide_"
+                }
+                ] 
+            %>
+            <!-- every { filename, anno } object makes a new section -->
+    
+            <!-- include the component -->
+            <%- include('./scrolly/scrolly.ejs', {id: "scrolly-two" , blocks: scrolly2 }); %>
+            
+            </section> 
+
+            <!--  5th static -->
+        <section class="ai2html">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                <!-- This is the line that matters for import -->
+                <%- include('./ai2html-output/static-last.ejs'); %>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <img src="./assets/puppet.gif" alt="puppet" class="gif-img">
+
+        <!--  static solution -->
+        <section class="ai2html">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                <!-- This is the line that matters for import -->
+                <%- include('./ai2html-output/solution.ejs'); %>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!--  6th static -->
+        <section class="ai2html">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                <!-- This is the line that matters for import -->
+                <%- include('./ai2html-output/name.ejs'); %>
+                </div>
+            </div>
+            </div>
+        </section>
+
 </body>
 </html>

@@ -11455,11 +11455,19 @@ textarea.form-control-lg {
 }
 
 body {
+  background-color: #ff8c39;
   font-family: Source Sans Pro, sans-serif;
 }
 
 [class*="display-"] {
   font-family: Source Serif Pro, serif;
+}
+
+.gif-img {
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 /*# sourceMappingURL=index.c92073ef.css.map */
